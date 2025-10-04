@@ -1,4 +1,62 @@
-<!doctype html><!DOCTYPE html>
+<<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Magazin Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        .product { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; width: 200px; }
+        .product button { margin-top: 5px; }
+        #cart { border: 1px solid #333; padding: 10px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<h1>Magazin Test</h1>
+
+<div class="product">
+    <h3>Produs 1</h3>
+    <p>Pret: 10 lei</p>
+    <button onclick="addToCart('Produs 1', 10)">Adaugă în coș</button>
+</div>
+
+<div class="product">
+    <h3>Produs 2</h3>
+    <p>Pret: 15 lei</p>
+    <button onclick="addToCart('Produs 2', 15)">Adaugă în coș</button>
+</div>
+
+<div id="cart">
+    <h3>Coșul tău</h3>
+    <ul id="cart-items"></ul>
+    <p>Total: <span id="total">0</span> lei</p>
+</div>
+
+<script>
+    let cart = [];
+    function addToCart(name, price) {
+        cart.push({name, price});
+        updateCart();
+    }
+
+    function updateCart() {
+        const list = document.getElementById('cart-items');
+        const totalEl = document.getElementById('total');
+        list.innerHTML = '';
+        let total = 0;
+        cart.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = item.name + ' - ' + item.price + ' lei';
+            list.appendChild(li);
+            total += item.price;
+        });
+        totalEl.textContent = total;
+    }
+</script>
+
+</body>
+</html>doctype html><!DOCTYPE html>
 <html>
 <head>
     <title>Site Test</title>
