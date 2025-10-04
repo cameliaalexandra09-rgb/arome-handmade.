@@ -1,5 +1,10 @@
 Arome Handmade — Starter (multilingual RO/EN)
+# main.py
 
+def salut():
+    print("Salut, Git!")
+
+salut()
 Descriere:
 - Site demo pentru magazin de parfumuri naturale, săpunuri și lumânări.
 - Limba implicită: română (RO). Se poate comuta în engleză (EN) din header.
