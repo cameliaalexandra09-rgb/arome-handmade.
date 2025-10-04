@@ -3,7 +3,7 @@ Arome Handmade — Starter (multilingual RO/EN)
 
 def salut():
     print("Salut, Git!")
-
+Adăugat funcția salut() pentru test commit
 salut()
 Descriere:
 - Site demo pentru magazin de parfumuri naturale, săpunuri și lumânări.
