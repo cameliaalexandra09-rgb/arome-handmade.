@@ -1,6 +1,11 @@
 Arome Handmade — Starter (multilingual RO/EN)
-# main.py
 
+# Proiect Test
+
+Salut, Git! Aceasta este o modificare de test.
+
+Salut, Git! Aceasta este o modificare de test.
+Salut, Git! Aceasta este o modificare de test.
 def salut():
     print("Salut, Git!")
 Adăugat funcția salut() pentru test commit
