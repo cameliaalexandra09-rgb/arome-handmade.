@@ -1,5 +1,5 @@
 Arome Handmade — Starter (multilingual RO/EN)
-
+Salut, Git! Aceasta este o modificare de test.
 # Proiect Test
 
 Salut, Git! Aceasta este o modificare de test.
